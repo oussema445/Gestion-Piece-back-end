@@ -5,10 +5,12 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
+import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 
 import com.oussema.pieces.entities.Pieces;
 
 @SpringBootApplication
+
 public class PiecesApplication implements CommandLineRunner {
 
 	@Autowired

@@ -9,14 +9,12 @@ import com.oussema.pieces.entities.Nature;
 import com.oussema.pieces.entities.Pieces;
 import com.oussema.pieces.repos.PieceRepository;
 
-
-
-@Service 
-public class PieceServiceimpl implements PieceService {
+@Service
+public class PieceServiceImpl implements PieceService {
 
 	@Autowired
-	PieceRepository pieceRepository ;
-	
+	PieceRepository pieceRepository;
+
 	@Override
 	public Pieces savePiece(Pieces p) {
 		return pieceRepository.save(p);
@@ -29,8 +27,8 @@ public class PieceServiceimpl implements PieceService {
 
 	@Override
 	public void deletePiece(Pieces p) {
-		 pieceRepository.delete(p);
-		
+		pieceRepository.delete(p);
+
 	}
 
 	@Override
@@ -62,10 +60,10 @@ public class PieceServiceimpl implements PieceService {
 	public List<Pieces> findByNomPrix(String nom, Double prix) {
 		return null;
 	}
-	
+
 	@Override
 	public List<Pieces> findByNatureIdNat(Long idNat) {
-	return pieceRepository.findByNatureIdNat(idNat);
+		return pieceRepository.findByNatureIdNat(idNat);
 	}
 
 	@Override
@@ -83,7 +81,5 @@ public class PieceServiceimpl implements PieceService {
 		return pieceRepository.trierPiecesNomsPrix();
 
 	}
-
-	
 
 }
