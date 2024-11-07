@@ -12,7 +12,7 @@ import com.oussema.pieces.repos.PieceRepository;
 
 
 @Service 
-public class PieceServiceimpl implements PieceService {
+public class PieceServiceImpl implements PieceService {
 
 	@Autowired
 	PieceRepository pieceRepository ;
