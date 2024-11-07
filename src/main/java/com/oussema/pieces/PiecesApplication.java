@@ -11,7 +11,11 @@ import com.oussema.pieces.entities.Nature;
 import com.oussema.pieces.entities.Pieces;
 
 @SpringBootApplication
+<<<<<<< HEAD
 @EnableMethodSecurity(prePostEnabled = true)
+=======
+
+>>>>>>> 70c64d6888c0438f5d1298cb6ff87affd423c920
 public class PiecesApplication implements CommandLineRunner {
 	
 	@Autowired
